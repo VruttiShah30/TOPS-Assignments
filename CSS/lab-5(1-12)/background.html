@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        *{
+            margin: 1%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .image1{
+            background-image: url(background.jpg);
+            background-position: 100px 200px;
+            border: solid black;
+            height: 500px;
+            width: 500px;
+        }
+        .image2{
+            border: solid black;
+            /* background-image:linear-gradient(to bottom,red,pink); */
+            /* background-image:linear-gradient(to top,red,blue); */
+            /* background-image:linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+            background-image: repeating-linear-gradient(to bottom, red 10%, blue 20%, green 30% , purple 40%);
+            height: 200px;
+            width: 400px;
+        }
+        .image3{
+            background-image: radial-gradient(red,orange,yellow);
+            border: solid black;
+            height: 200px;
+            width: 400px;
+            
+        }
+        .color{
+            background-color: aqua;
+            border: solid black;
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of Background-Image</h1>
+    <div class="image1"></div>
+
+    <h1>Example of linear-gradient</h1>
+    <div class="image2"></div>
+
+    <h1>Example of radial-gradient</h1>
+    <div class="image3"></div>
+
+    <h1>Example of background-color</h1>
+    <div class="color"></div>
+</body>
+</html>
