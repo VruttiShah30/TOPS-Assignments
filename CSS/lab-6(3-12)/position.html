@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Position</title>
     <style>
+        *{
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+        }
         .main{
             height: 400px;
             width: 100%;
@@ -12,18 +17,19 @@
             position: relative;
             top: 200px;
         }
-        .absolut-example{
+        .absolute-example{
             position: absolute;
             top: 100px;
             left: 50%;
         }
     </style>
+    <div class="main">
+        <div class="absolute-example">
+            Absolute-Example
+        </div>
+    </div>
 </head>
 <body>
-    <div class="main">
-            <div class="absolut-example">
-                absolut-example
-            </div>
-    </div>
+    
 </body>
 </html>
