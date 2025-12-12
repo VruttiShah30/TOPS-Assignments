@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.main{
+    padding: 0;
+    background-color: white;
+    display: flex;
+}
+.color-item{
+    margin: 10%;
+    padding: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Palette-Generator{
+    color: rgb(29, 135, 135);
+    background-color: rgb(146, 238, 238);
+    border-radius: 5%;
+}
+.Palette-Generator h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Palette-Generator:hover{
+    background-color: rgb(29, 135, 135);
+    color: white;
+}
+.Explore-Palettes{
+    color: rgb(64, 58, 241);
+    background-color: rgb(199, 214, 252);
+    border-radius: 5%;
+}
+.Explore-Palettes h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Explore-Palettes:hover{
+    background-color:rgb(64, 58, 241);
+    color: white;
+}
+.Image-Picker{
+    color: rgb(131, 55, 189);
+    background-color: rgb(222, 193, 245);
+    border-radius: 5%;
+}
+.Image-Picker h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Image-Picker:hover{
+    background-color:rgb(131, 55, 189) ;
+    color: white;
+}
+.Contrast-Checker{
+    color: rgb(188, 41, 137);
+    background-color: rgb(253, 202, 240);
+    border-radius: 5%;
+}
+.Contrast-Checker h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Contrast-Checker:hover{
+    background-color: rgb(188, 41, 137);
+    color: white;
+}
+.Palette-Visualizer{
+    color: rgb(180, 22, 22);
+    background-color: rgb(243, 208, 207);
+    border-radius: 5%;
+}
+.Palette-Visualizer h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Palette-Visualizer:hover{
+    background-color: rgb(180, 22, 22);
+    color: white;
+}
+.Color-Picker{
+    color: rgb(199, 81, 23);
+    background-color: rgb(236, 226, 216);
+    border-radius: 5%;
+}
+.Color-Picker h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Color-Picker:hover{
+    background-color: rgb(199, 81, 23);
+    color: white;
+}
+
+.Tailwind-Colors{
+    color: rgb(32, 140, 104);
+    background-color: rgb(191, 242, 214);
+    border-radius: 5%;
+}
+.Tailwind-Colors h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.Tailwind-Colors:hover{
+    background-color: rgb(32, 140, 104);
+    color: white;
+}
+
+
+
