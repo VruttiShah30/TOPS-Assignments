@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 5px solid blue;
+            margin: 100px;
+            height: 400px;
+            display: grid;
+            grid-template-areas: 'header header header header'
+                                  'aside section section section'
+                                    'footer footer footer footer';
+        }
+        .header{
+           grid-area: header;
+           padding:20px 20px;
+           text-align: center;
+           border: 5px solid blue;
+
+        }
+        .aside{
+            grid-area: aside;
+            padding: 20px;
+            border: 5px solid blue;
+            
+        }
+        .aside a{
+                display: block;
+        }
+        .section{
+            grid-area: section;
+            padding: 20px;
+            border: 5px solid blue;
+            text-align: center;
+        }
+        .footer{
+            grid-area: footer;
+            padding: 20px;
+            border: 5px solid blue;
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h2>My Header</h2>
+        </div>
+        <div class="aside">
+            <a href="">link-1</a>
+            <a href="">link-2</a>
+            <a href="">link-3</a>
+        </div>
+        <div class="section">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam minus quam eveniet aperiam! Consequatur deserunt quaerat ratione ad expedita.</p>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

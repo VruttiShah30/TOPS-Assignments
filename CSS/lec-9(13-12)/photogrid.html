@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phpto grid</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .row{
+            display: grid;
+            padding: 10px;
+            border: 5px solid rgb(201, 29, 29);
+            align-content: center;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+        .col{
+            padding: 10px;
+            /* background-color: aqua; */
+            /* border: 5px solid black; */
+            
+        }
+        .col img{
+            border: 5px solid black;
+            height: 100%;
+            width: 100%;
+        }
+        #col-1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+         }
+        #col-3{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        }
+        #col-6{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        #col-7{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+        <div class="row">
+            <div class="col" id="col-1"><img src="2.jpg" alt=""></div>
+            <div class="col" id="col-2"><img src="1.jpg" alt=""></div>
+            <div class="col" id="col-3"><img src="3.jpg" alt=""></div>
+            <div class="col" id="col-4"><img src="4.jpg" alt=""></div>
+            <div class="col" id="col-5"><img src="5.jpg" alt=""></div>
+            <div class="col" id="col-6"><img src="6.jpg" alt=""></div>
+            <div class="col" id="col-7"><img src="8.jpg" alt=""></div>
+            <div class="col" id="col-8"><img src="7.jpg" alt=""></div>
+        </div>
+</body>
+</html>

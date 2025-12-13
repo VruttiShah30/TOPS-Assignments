@@ -6,9 +6,10 @@
     list-style-type: none;
 }
 .main{
-    padding: 0;
+    padding: 10px;
     background-color: white;
     display: flex;
+    gap: 20px;
 }
 .color-item{
     margin: 10%;
