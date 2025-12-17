@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>First Web Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            padding: 30px;
+            height: 800px;
+            width: 100%;
+            background-image: url(download.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .navbar{
+            display: flex;
+            height: 80px;
+            padding: 0px 100px;
+            align-items: center;
+            /* background-color: rgba(0,0,0,0.5); */
+            justify-content: space-between;
+        }
+        .navbar .logo{
+            padding: 0;
+            font-size: 2em;
+            font-weight: bolder;
+            color:rgb(255, 136, 0);
+        }
+        .navbar ul{
+            display: flex;
+        }
+        .navbar ul li{
+            list-style: none;
+            padding: 0px 40px;
+            color: white;
+        }
+        .navbar ul li a{
+            list-style: none;
+            text-decoration: none; 
+        }
+        .search{
+            color: white;
+            border: 1px solid rgb(255, 136, 0);
+            font-size: 1em;
+            align-content: center;
+        }
+        .search #search1{
+            background-color: transparent;
+            border: none;
+        }
+        .search #search2{
+            background-color: rgb(255, 136, 0);
+        }
+        /* Style all font awesome icons */
+            .fa {
+                display: flex;
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                background-color: transparent;
+                color: white;
+            }
+            .content{
+                display: flex;
+                justify-content:space-between;
+                margin: 5%;
+                line-height: 50px;
+            }
+            .form{
+                width: 350px;
+                text-align: center;
+                height: 400px;
+                border: 2px solid black;
+                padding: 10px;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                opacity: 0.8;
+                line-height: 30px;
+            }
+            .content .section h3{
+                font-size: 3em;
+            }
+            #password{
+                color: white;
+                border: none;
+                border-bottom: 5px solid rgb(255, 136, 0);
+            }
+            #login-here{
+                width: 200px;
+                height: 30px;
+                border-radius: 10px;
+                color: rgb(255, 136, 0);
+                font-size: 1em;
+                border: none;
+            }
+            #email{
+                border: none;
+                border-bottom: 5px solid rgb(255, 136, 0);
+            }
+            
+            #login{
+                width: 200px;
+                height: 30px;
+                border-radius: 10px;
+                background-color: rgb(255, 136, 0);
+                color: black;
+                font-size: 1em;
+                border: none;
+            }
+            .section p{
+                line-height: 30px;
+                font-size: 1.2em;
+                color: white;
+                line-height: 30px;
+            }
+            .section button{
+                background-color: rgb(255, 136, 0);
+                color: black;
+                border-radius: 10px;
+                height: 40px;
+                width: 200px;
+                font-size: 1em;
+                border: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <label for="" class="logo">PraRoz <img src="earth.png" alt="" height="20px" width="20px"></label>
+            
+            <ul>
+                <li><a href=""></a>HOME</li>
+                <li><a href=""></a>ABOUT</li>
+                <li><a href=""></a>SERVICE</li>
+                <li><a href=""></a>DESIGN</li>
+                <li><a href=""></a>CONTACT</li>
+            </ul>
+            <div class="search">
+                <input type="search" class="search" id="search1" placeholder="Type to Search">
+                <label for="search" id="search2">Search</label>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="section">
+
+                <h3 style="color: white;">Web Design & <br> </h3>
+                
+                <h3 style="color: rgb(255, 136, 0);">Development</h3><h3 style="color: white">Course</h3>
+            
+                <p> Web Design is a speciallisation of the design stream.They also use HTML ,<br> CSS , WYSIWYG editing software , mark up validators etc., <br> to create design elements.</p>
+
+                <button>JOIN US</button>
+            </div>
+       
+            <div class="form">
+
+                <button id="login-here">Login Here</button><br><br>
+
+                <input type="email" id="email" placeholder="Enter Email Here"><br>
+
+                <input type="password" name="password" id="password" placeholder="Enter Password Here"><br><br>
+
+                <button id="login">Login</button><br>
+
+                <p>Don't have an account ?<br><a style="color: rgb(255, 136, 0);"> Sign-up </a>here <br></p>
+
+                <p>Log in with</p><br>
+
+                <div class="fa">
+                    <!-- Add icon library -->
+                    <!-- Add font awesome icons -->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-skype"></a>
+                </div>
+            
+            </div>
+         </div>
+    </div>
+</body>
+</html>
