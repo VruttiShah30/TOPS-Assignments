@@ -5,18 +5,22 @@
     font-weight: 2em;
     font-family: 'Montserrat', sans-serif;
 }
+
 h5{
     font-size: 6em;
     font-weight: 100;
     letter-spacing: 2px;
     font-family:
 }
+
 h6{
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 100;
     color: rgb(200, 198, 198);
 }
+
+/* =====================================================hero-div=============================================================== */
 .hero-div{
     background-image: url(header_1.jpg);
     height: 1100px;
@@ -24,6 +28,8 @@ h6{
     background-size: 100% 100%;
     /* background-position:; */
 }
+
+/* ============================================= Navbar ================================================================ */
 .navbar{
     background-color: rgba(255, 255, 255, 0.7);
     color: rgb(82, 81, 81);
@@ -34,21 +40,18 @@ h6{
     gap:50px;
     height: 70px;
     margin:10px 300px;
-    padding: 15px 100px;
+    padding: 15px 50px;
     width: 70%;
     align-items: center;
     position: fixed;
     top: 30px;
     font-size: 1;
 }
+
 .social{
-    margin-left: auto;
-    
+    margin-left: auto; 
 }
-.social img{
-    height:"15px";
-    width:"15px";
-}
+
 #btn button{
     padding: 10px 15px;
     background-color: black;
@@ -66,6 +69,7 @@ h6{
     color: rgb(119, 118, 118);
     gap: 5px;
 }
+/* ========================================================Nav-footer================================================== */
 .footer{
     padding:900px 300px;
     display: flex;
@@ -415,7 +419,7 @@ h6{
     grid-column: 1 / span 2;
 }
 
-/* ===============================================footer social media symbol=================================================== */
+/* ===============================================footer-social-media-symbol=================================================== */
 
 .foot-social{
     margin-top: 100px;
