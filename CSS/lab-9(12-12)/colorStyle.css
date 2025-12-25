@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 20px;
+}
+.main .card-header h4{
+    font-size: 2em;
+    font-weight:bolder;
+}
+.main .card-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5em;
+}
+.main .card-footer button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+}
+.Palette-Generator{
+    color: rgb(29, 135, 135);
+    background-color: rgb(146, 238, 238);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Palette-Generator:hover{
+    background-color: rgb(29, 135, 135);
+    color: white;
+}
+.Explore-Palettes{
+    color: rgb(64, 58, 241);
+    background-color: rgb(199, 214, 252);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Explore-Palettes:hover{
+    background-color:rgb(64, 58, 241);
+    color: white;
+}
+.Image-Picker{
+    color: rgb(131, 55, 189);
+    background-color: rgb(222, 193, 245);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Image-Picker:hover{
+    background-color:rgb(131, 55, 189) ;
+    color: white;
+}
+.Contrast-Checker{
+    color: rgb(188, 41, 137);
+    background-color: rgb(253, 202, 240);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Contrast-Checker:hover{
+    background-color: rgb(188, 41, 137);
+    color: white;
+}
+.Palette-Visualizer{
+    color: rgb(180, 22, 22);
+    background-color: rgb(243, 208, 207);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Palette-Visualizer:hover{
+    background-color: rgb(180, 22, 22);
+    color: white;
+}
+.Color-Picker{
+    color: rgb(199, 81, 23);
+    background-color: rgb(236, 226, 216);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Color-Picker:hover{
+    background-color: rgb(199, 81, 23);
+    color: white;
+}
+.Tailwind-Colors{
+    color: rgb(210, 140, 11);
+    background-color:  rgb(255, 253, 230);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Tailwind-Colors:hover{
+    background-color: rgb(210, 140, 11);
+    color: white;
+}
+.Color-Bot{
+    color: rgb(32, 140, 104);
+    background-color: rgb(191, 242, 214);
+    border-radius: 10px;
+    flex:30%;
+    border: none;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Color-Bot:hover{
+    background-color: rgb(32, 140, 104);
+    color: white;
+}

@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
+    list-style-type:none;
     text-decoration: none;
 }
+
 .student-nav{
     padding: 0px 20px;
     height: 80px;
-    background-color: rgb(60, 60, 169);
-    display: flex ;
-    justify-content : space-between;
+    background-color: rgb(62, 62, 169);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .nav-item{
+   
     display: flex;
     gap: 20px;
     height: 100%;
@@ -24,10 +26,10 @@
     display: inline-block;
 }
 .nav-item img{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 }
-.nav-item li a {
+.nav-item li a{
     color: white;
 }
 .nav-button{
@@ -37,9 +39,10 @@
 .nav-button button{
     padding: 10px 20px;
     background-color: white;
-    color: rgb(60, 60, 169);
+    color: rgb(62, 62, 169);
     border-radius: 10px;
     border: none;
+
 }
 .container{
     padding: 100px;
