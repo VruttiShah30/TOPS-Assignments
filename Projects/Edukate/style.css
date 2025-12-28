@@ -4,10 +4,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* =========================================================== header ======================================================================== */
 .header{
     width: 100%;
     padding: 30px;
-    height: 30px;
+    height: 20px;
     background-color: rgb(0, 0, 28);
     color: white;
     display: flex;
@@ -28,4 +29,222 @@
 }
 .head-social i{
     margin: 5px;
+}
+/* ============================================================= Navbar ===================================================================== */
+.navbar{
+    /* border: 2px solid black; */
+    padding: 60px;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-logo{
+    font-size: 50px;
+    color: rgb(40, 120, 235);
+    font-weight:700;  
+}
+.nav-items{
+    font-weight: 900px;
+}
+.nav-items ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav-items a{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.nav-button button{
+    padding: 10px 30px;
+    font-size: 1.5em;
+    background-color: rgb(40, 120, 235);
+    color: white;
+    border: none;
+}
+/* ============================================================= Hero Div ========================================================== */
+.hero-div{
+    /* background-image: url(Images/istockphoto-1138904508-612x612.jpg); */
+    background-image: linear-gradient(rgba(40, 120, 235,0.9), rgba(40, 120, 235,0.9)), url("Images/header.jpg"); 
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -90px;
+}
+.hero-div2{
+    background-image: url(Images/overlay-bottom.png);
+    height: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* ============================================================ Hero-content =================================================== */
+.hero-content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    align-items: center;
+    line-height: 150px;
+}
+.hero-para p{
+    font-size: 3em;
+    font-weight: 600;
+}
+.hero-head h2{
+    font-size: 8em;
+    font-weight:700;
+}
+.hero-textbox{
+    padding: 20px 50px;
+    font-size: 1.2em;
+}
+.hero-textbox select{
+    color: gray;
+    width: 200px;
+}
+.hero-textbox button{
+    background-color: rgb(235, 82, 79);
+    color: white;
+    border: none;
+}
+
+/* ================================================ about ======================================================================= */
+.about{
+    margin:200px;
+    display: flex;
+}
+.about img{
+    height: 700px;
+    width: 600px;
+}
+.about-info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 50px;
+    padding: 0px 50px;
+}
+.about-head{
+    padding: 10px;
+    font-size: 1.3em;
+    color: red;
+    border-bottom: dashed red;
+    width: 15%;
+}
+.about-choice{ 
+    font-size: 4em;
+    font-weight: 700;
+}
+.about-para{
+    /* padding: 10px 0px; */
+    color: gray;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+.about-grid{
+    display: flex;
+}
+.about-grid h4{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+.about-grid p{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about .div1{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(4, 177, 4);
+}
+.about .div2{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(0, 0, 251);
+}
+.about .div3{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(255, 49, 49);
+}
+.about .div4{
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(255, 255, 30);
+}
+/* =================================================== Why you choose us ======================================================= */
+.why-choose{
+    display: flex;
+    margin: 200px;
+}
+.why-choose-info{
+    margin-left: 100px;
+}
+.why-choose-label{
+    padding: 10px;
+    font-size: 1.3em;
+    color: red;
+    border-bottom: dashed red;
+    width: 30%;
+}
+.why-choose-head h3{
+    font-size: 4em;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+.why-choose-para p{
+    color: gray;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    margin: 20px 10px;
+}
+.why-choose-div{
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px; */
+}
+.icon-div{
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+}
+.icon-div i{
+    /* padding: 40px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+.head-para-div{
+    display: flex;
+    flex-direction: column;
+}
+.para-div1{
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+}
+.head-para-div h3{
+    font-size: 2em;
+}
+.head-para-div p{
+    margin: 10px 0px;
+    font-size: 1.3em;
+    color: gray;
 }
