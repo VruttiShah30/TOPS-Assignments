@@ -346,7 +346,7 @@
     margin: 200px 500px;
     height: 400px;
     width: 50%;
-    background-color: rgb(239, 238, 237);
+    background-color: rgb(255, 250, 245);
 }
 .student-form h4{
     text-align: center;
@@ -417,7 +417,8 @@
     align-items: center;
     justify-content: center;
     line-height: 40px;
-    
+    margin-left: -50px;
+    margin-top: -170px;
 }
 .instructors-data h3{
     /* margin: 10px; */
@@ -435,4 +436,54 @@
 .instrouctor-social{
     color: rgb(40, 120, 235);
     letter-spacing: 4px;
+}
+#instrouctor-img1{
+    background-image: url(Images/team-1.jpg);
+    background-color: rgb(238, 241, 255);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 400px;
+}
+#left-btn{
+    padding: 20px;
+    background-color: rgb(40, 120, 235);
+    font-size: 2em;
+    color: white;
+    margin-left: -40px;
+    margin-top: 250px;
+    border: none;
+}
+#instrouctor-img2{
+    background-image: url(Images/team-2.jpg);
+    background-color: rgb(238, 241, 255);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 400px;
+}
+#instrouctor-img3{
+    background-image: url(Images/team-3.jpg);
+    background-color: rgb(238, 241, 255);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 400px;
+}
+#right-btn{
+    padding: 20px;
+    background-color: rgb(40, 120, 235);
+    font-size: 2em;
+    color: white;
+    margin-left: 360px;
+    margin-top: 250px;
+    border: none;
+}
+#right-btn:hover{
+    background-color: rgb(205, 40, 40);
+}
+#left-btn:hover{
+    background-color: rgb(205, 40, 40);
+}
+/* ==================================================Testimonial=================================================== */
+.Testimonial{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
