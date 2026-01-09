@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text Example</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 500PX;
+            width: 100%;
+            background-color: pink;
+            border: 10px solid rgb(190, 31, 84);
+        }
+        .hero-text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: darkblue;
+        }
+        h2{
+            margin: 20px 0px;
+            font-size: 5em;
+        }
+        p{
+            font-size: 3em;
+            margin: 20px 0px;
+            letter-spacing: 5px;
+        }
+         @media screen and (max-width:1200px){
+            h2{
+                font-size: 4em;
+                color: rgb(250, 6, 250);
+            }
+            p{
+                font-size: 2em;
+            }
+        }
+        @media screen and (max-width:992px){
+            h2{
+                font-size: 3em;
+                color: black;
+            }
+            p{
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-width:768px){
+            h2{
+                font-size: 2em;
+                color: greenyellow;
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="hero-text">
+                <h2>Welcome To Tops Technology</h2>
+                <p>Start Learning from India's Best IT Training Company</p>
+        </div>
+    </div>
+</body>
+</html>
