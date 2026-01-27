@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Eample 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container{
+            text-align: center;
+        }
+        .container h1{
+            background-color: beige;
+            padding: 50px;
+            font-size: 3em;
+        }
+        .container.head p{
+            background-color:bisque;
+            padding: 25px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container head">
+        <h1>My First Bootstrap Page</h1>
+        <p>Example of Bootstrap container.</p>
+    </div>
+    
+    <div class="container-fluid">
+        <p>Example of Bootstrap container-fluid and Grid.</p>
+
+        <h2 style="text-align: center;">Example of Bootstrap Grid</h2>
+        <div class="row">
+            <div class="col-lg-2 border">1</div>
+            <div class="col-lg-2 border">2</div>
+            <div class="col-lg-2 border">3</div>
+            <div class="col-lg-2 border">4</div>
+            <div class="col-lg-2 border">5</div>
+            <div class="col-lg-2 border">6</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 border">1</div>
+            <div class="col-lg-4 border">2</div>
+            <div class="col-lg-4 border">3</div>
+        </div>
+
+        <div class="container p-5">
+            <h3>Bootstrap Padding..</h3>
+            <p>By default, containers have left and right padding, with no top or bottom padding. Therefore, we often use spacing utilities, such as extra padding and margins to make them look even better. </p>
+        </div>
+        <div class="container bg-primary" style="height: 200px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, delectus.</p>
+        </div>
+        <div class="container bg-primary bg-gradient mt-4" style="height: 200px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, delectus.</p>
+        </div>
+        
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
