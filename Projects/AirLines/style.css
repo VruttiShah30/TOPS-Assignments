@@ -189,11 +189,9 @@
   align-items: center;
   margin: 30px 0;
 }
-
 .section-content{
   max-width: 600px;
 }
-
 .section-content h3{
   color: #333;
   font-size: 25px;
@@ -201,7 +199,6 @@
   display: flex;
   align-items: center;
 }
-
 .dot{
   width: 10px;
   height: 10px;
@@ -210,19 +207,16 @@
   display: inline-block;
   margin-right: 10px;
 }
-
 .section-content p{
   font-size: 20px;
   line-height: 1.6;
 }
-
 .action{
   display: flex;
   gap: 10px;
   justify-content: flex-end;
   margin-top: 15px;
 }
-
 .btn{
   padding: 10px 18px;
   font-size: 13px;
@@ -230,7 +224,6 @@
   color: #fff;
   border-radius: 4px;
 }
-
 .btn.dark {
   background: linear-gradient(#555, #333);
 }
@@ -238,7 +231,6 @@
 .btn.blue {
   background: linear-gradient(#6bbad8, #3a8fb7);
 }
-
 .our-clients{
     display: grid;
     gap: 50px;

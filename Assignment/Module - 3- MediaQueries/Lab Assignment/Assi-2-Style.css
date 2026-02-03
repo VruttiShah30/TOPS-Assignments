@@ -1,0 +1,40 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif; /* Body font */
+    }
+    .main {
+      padding: 20px;
+      background-color: rgb(178, 180, 183);
+      color: rgb(5, 25, 83);
+      line-height: 2;
+    }
+
+    .blog-post {
+      margin: 50px;
+      background: rgb(255, 255, 255);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif; /* Heading font */
+      font-size: 4em;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-weight: 500;
+      color: #975151;
+      margin-bottom: 25px;
+      font-size: 3em ;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 2em;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
