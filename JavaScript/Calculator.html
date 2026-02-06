@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #result{
+            height: 200px;
+            width: 20%;
+            border: 5px  solid black;
+            padding: 50px;
+        }
+    </style>
+    <script>
+        function calC() {
+            let num1= Number (document.getElementById('num1').value);
+            let num2=Number (document.getElementById('num2').value);
+
+            num1 = Number(num1);
+            num2 = Number(num2);
+        
+
+        let str = `
+            <h1>Addition=${num1+num2}</h1><br><br>
+            sub=${num1-num2}<br><br>
+            Mul=${num1*num2}<br><br>
+            div=${num1/num2}<br><br>
+        `;
+
+        // console.log(str);
+        
+        document.getElementById('result').innerHTML=str;
+
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1>Simple Calculator</h1>
+        </legend>
+        <label for="">Enter Number 1</label>
+        <input type="text" name="" id="num1"><br><br>
+
+        <label for="">Enter Number 2</label>
+        <input type="text" name="" id="num2"><br><br>
+
+        <input type="button" value="Submit" onclick="calC()"><br><br><br>
+
+        <div id="result"></div>
+
+    </fieldset>
+</body>
+</html>
