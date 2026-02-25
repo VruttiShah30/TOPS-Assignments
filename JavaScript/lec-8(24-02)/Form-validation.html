@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation Example</title>
+    <style>
+        body{
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            padding: 50px 30px;
+            border: 10px solid black;
+            border-radius: 20px;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Registration Form
+        </h1>
+
+        <form method="post" id="frm1">
+
+
+            <div class="form-group" id="error-username">
+                <label for="">Enter Username</label>
+                <input type="text" name="" id="username">
+            </div>
+
+
+            <div class="form-group">
+                <input type="text" name="" id="">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="submit" id="submit">
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('frm1').addEventListener('submit',function(e){
+            e.preventDefault(); //Stop page loading
+
+            let txt1=document.getElementById('username');
+            console.log(txt1.value);
+
+            if (txt1.value == "") {
+                //username requried.
+                let p1 = document.createElement('p');
+                p1.innerText="Username Requried";
+                p1.style.color="red";
+                document.getElementById('error-username').appendChild(p1);
+                txt1.focus();
+            }
+            
+            else{
+
+            }
+        })
+    </script>
+</body>
+</html>

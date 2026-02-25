@@ -1,0 +1,29 @@
+<!-- Get elements by its tag name -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get elementsby tag name</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, porro?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, porro?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, porro?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, porro?</p>
+
+    <script>
+        let p1=document.getElementsByTagName('p');
+        console.log(p1);
+        p1[0].style.color="red";
+        p1[1].style.border="10px solid green";
+        p1[2].style.backgroundColor="aqua";
+        p1[3].style.backgroundImage="url('one.jpg')";
+        p1[3].style.backgroundSize="100% 100%";
+        p1[3].style.height="400px";
+        p1[3].style.width="400px";
+
+    </script>
+</body>
+</html>

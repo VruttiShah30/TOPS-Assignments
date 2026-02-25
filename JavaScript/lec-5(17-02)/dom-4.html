@@ -1,0 +1,61 @@
+<!-- Add table dom  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Table</title>
+    <style>
+        .box{
+            border: 10px solid black;
+            height: 300px;
+
+    }
+    </style>
+
+</head>
+<body>
+    <button onclick="addPara()">Add Text into Paragraph</button>
+    <div class="box" id="box-1">
+
+    </div>
+
+    <button onclick="genTable()">Generate Table</button>
+    <div class="table-div">
+
+    </div>
+
+    <script>
+        function addPara(){
+            let data=prompt("Enter Your Text here");
+            document.getElementById('box-1').innerHTML="<p>"+data+"</p>"
+        }
+
+        function genTable(){
+            let row=prompt("Enter Row");
+            console.log(row);
+
+            let column=prompt("Enter column");
+            console.log(column);
+
+            let str= `<table border='1'>`;
+                let i,j;
+                for(i=1;i<=row;i++){
+                    str+='<tr>';
+                    for(j=1;j<=column;j++){
+                        str+=`<td>tabledata</td>`;
+
+                    }
+                    str+=`</tr>`
+                }
+                str+=`</table>`
+
+                console.log(str);
+                document.querySelector('.table-div').innerHTML=str;
+                
+        }
+    </script>
+</body>
+</html>

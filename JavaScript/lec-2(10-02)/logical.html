@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical</title>
+    <script>
+        function checkAdmision(){
+            let maths = document.getElementById('maths').value;
+            let phys = document.getElementById('phys').value;
+            let chem = document.getElementById('chem').value;
+
+            maths= Number(maths);
+            chem= Number(chem);
+            phys= Number(phys);
+            console.log(maths);
+
+            if(maths >= 65 && phys >= 55 && chem >= 50){
+                let total = maths+phys+chem;
+                let subTotal = maths+phys;
+
+                console.log(total);
+                console.log(subTotal);
+
+                if(total>=190 || subTotal>=140){
+                    alert("Eligible for Admission");
+                }
+                else{
+                    alert("Not Eligible inner coind");
+                }
+            }
+            else{
+                alert("Not Eligible outer coind")
+            }
+        }
+    </script>
+</head>
+<body>
+    <p><b>Note : </b><br><br>
+    Maths >=65 <br>
+    Phys >=55 <br>
+    Chem >=50 <br>
+    Maths+Phys+Chem >=190
+    Maths+Phys>=145
+    </p>
+    <fieldset>
+        <legend>Adimission Form</legend>
+
+        <label for="">Enter Maths Marks</label>
+        <input type="text" name="" id="maths"><br><br>
+
+        <label for="">Enter Physics Marks</label>
+        <input type="text" name="" id="phys"><br><br>
+
+        <label for="">Enter Chemestry Marks</label>
+        <input type="text" name="" id="chem"><br><br>
+
+        <input type="button" value="Submit" onclick="checkAdmision()">
+
+    </fieldset>
+</body>
+</html>

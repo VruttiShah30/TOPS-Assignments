@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+        "use strict";
+//funtion Declaration 
+        function display() {
+            console.log("Simple function in js");
+            
+        }
+        display();
+
+//Local & Outer variable in function scope
+
+        let cName="Tops Technology"; //Outer variable
+        function printUser() {
+            let uname="Vrutti";  //Locaal variable
+            console.log("Name=",uname);
+            console.log("cName=",cName);//Outer Variable
+        }
+
+        printUser();
+
+//Function With ParaMeters
+
+        function addition(a,b){
+            let c=a+b;
+            console.log("Addition is ",c);
+        }
+        
+        addition(50,100);
+        addition(5,50);
+
+
+//Function With Default parameters 
+
+        function Multiplication(a,b,c=1){
+            let m=a*b*c;
+            console.log("Multiplication is ",m);
+            
+        }
+        Multiplication(5,3,2);
+        Multiplication(5,3);
+
+//Funtion Returning Value
+
+        let num1=squareFind(12);
+        function squareFind(num){
+            return num*num;
+        }
+        console.log(num1);
+        console.log(squareFind(10));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
