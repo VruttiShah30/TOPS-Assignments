@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Counter Example</title>
 </head>
 <body>
     <button id="leftbtn">Left</button>
@@ -12,8 +12,10 @@
         let count=0;
         // console.log(count);
         document.getElementById('rightbtn').addEventListener('click',()=>{
+            
+            console.log("before",count);
             count++;
-            console.log(count);
+            console.log("after",count);
             if (count==3) {
                 count=0;
             } 
