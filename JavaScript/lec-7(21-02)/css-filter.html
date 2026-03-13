@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Filter Radio Example</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 100px;
+            padding: 50px;
+            background: #e6e6e6;
+        }
+
+        .controls label{
+            display: block;
+            background: #4a4a4a;
+            color: #9fffa1;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .controls input{
+            margin-right: 30px;
+        }
+
+        img{
+            width: 350px;
+            /* transition: 0.4s; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    
+        <div class="controls">
+            <label><input type="radio" name="filter" value="none" checked> filter: none;</label>
+            <label><input type="radio" name="filter" value="blur(5px)"> filter: blur(5px);</label>
+            <label><input type="radio" name="filter" value="brightness(200%)"> filter: brightness(200%);</label>
+            <label><input type="radio" name="filter" value="contrast(200%)"> filter: contrast(200%);</label>
+            <label><input type="radio" name="filter" value="drop-shadow(8px 8px 10px gray)"> filter: drop-shadow(8px 8px 10px gray);</label>
+            <label><input type="radio" name="filter" value="grayscale(100%)"> filter: grayscale(100%);</label>
+            <label><input type="radio" name="filter" value="hue-rotate(90deg)"> filter: hue-rotate(90deg);</label>
+            <label><input type="radio" name="filter" value="invert(100%)"> filter: invert(100%);</label>
+            <label><input type="radio" name="filter" value="opacity(30%)"> filter: opacity(30%);</label>
+            <label><input type="radio" name="filter" value="saturate(8)"> filter: saturate(8);</label>
+            <label><input type="radio" name="filter" value="sepia(100%)"> filter: sepia(100%);</label>
+            <label><input type="radio" name="filter" value="contrast(200%) brightness(150%)"> filter: contrast(200%) brightness(150%);</label>
+        </div>
+
+        <div>
+            <img id="myImage" src="pineapple.jpg">
+        </div>
+
+    <script>
+        const image = document.getElementById("myImage");
+        const radios = document.querySelectorAll('input[name="filter"]');
+
+        radios.forEach(radio => {
+            radio.addEventListener("change", function(){
+                image.style.filter = this.value;
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

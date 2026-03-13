@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Concate for each loop method</title>
+</head>
+<body>
+    <script>
+        let arr = ['apple','banana','chicku','kiwi','watermelon'];
+        
+        //Slice Array
+        let sliceArray = arr.slice(2,5);
+        console.log(sliceArray);
+        
+        //concate Array
+        let concateArray = ['Pineapple','berries'].concat(arr);
+        console.log(concateArray);
+
+        //forEach loop: for capital all 
+        
+        let capitalArray = arr.forEach((item,i,arr)=>{
+            console.log(item.toUpperCase());
+            
+        })
+
+        //forEach loop : for calculate total salary 
+
+        let salaryArray = [20000,30000,10000,12000,35000,23000];
+        let sum = 0;
+        salaryArray.forEach((sal,i,salaryArray)=>{
+            sum =sum+sal;
+        })
+        // How its Works : 
+        // [1,2] + [3,4];
+        // OutPut : "1,23,4"
+        // let op1=[1,2].toString();
+        // let op2=[3,4].toString();
+
+        // console.log(op1);
+        // console.log(op2);
+        // console.log(op1+op2);
+        
+
+        
+    </script>
+</body>
+</html>

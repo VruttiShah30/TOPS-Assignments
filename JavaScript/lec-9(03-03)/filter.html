@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter of fruits</title>
+</head>
+<body>
+
+    <input type="text" name="" id="txt1">
+    <ul id="flist">
+        
+    </ul>
+    <script>
+        let fruitList = ['apple','kiwi','banana','barries','avacado','chickoo'];
+        function PrintList(array) {
+            let str = "";
+            for (let i=0;i<array.length;i++){
+                str+=`
+                    <li>${array[i]}</li>
+                `
+                console.log(str);
+                document.getElementById('flist').innerHTML=str;
+            }
+
+            
+        }
+        PrintList(fruitList);
+        document.getElementById('txt1').addEventListener('keyup',function(e){
+
+            let substr=e.target.value;
+            let newArray=[];
+            for(let i=0;i<fruitList.length;i++){
+                if(fruitList[i].indexOf(substr) >=0){
+                    console.log(fruitList[i]);
+                    newArray.push(fruitList[i])                    
+                }
+            }
+            console.log(newArray);
+            PrintList(newArray);
+            
+        })
+    </script>
+</body>
+
+</html>

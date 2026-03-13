@@ -80,7 +80,7 @@ body{
     font-size: 1.4em;
 }
 .order-btn button{
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding: 10px 20px;
     font-size: 1.5em;
     background-color: rgba(15, 14, 14, 0.9);
@@ -100,7 +100,7 @@ body{
    
 .content{
     /* height: 800px; */
-    margin: 100px 200px;
+    margin: 100px 100px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }

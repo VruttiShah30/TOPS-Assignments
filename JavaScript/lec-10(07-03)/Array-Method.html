@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        let fruits = ['apple','banana','chicku','kiwi','watermelon'];
+        console.log(fruits);
+        console.log(typeof(fruits));//type of array is OBJECT
+
+        
+        for(let i = 0; i<fruits.length ; i++){
+            console.log(fruits[i]);
+            
+        }
+
+        console.log("Last element of array ", fruits.at(-1));
+        //LIFO (Last-In-First-Out)
+        // PUSH : push element to end 
+        // POP :  remove element from end
+
+        // FIFO (First-In-First-Out)
+        // UNSHIFT : push element to first 
+        // SHIFT :   remove element from first 
+
+
+        fruits.push("grapes");
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);
+
+        fruits.unshift("grapes");
+        console.log(fruits);
+
+        fruits.shift();
+        console.log(fruits);
+        
+
+        //For in loop used for array only
+        for(key in fruits){
+            console.log(`index of i=${key} value = ${fruits[key]}`);
+        }
+
+        console.log([]);
+    </script>
+</body>
+</html>

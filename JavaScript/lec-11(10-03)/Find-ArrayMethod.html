@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Array </title>
+</head>
+<body>
+    <table align="center" border="1" cellspacing="10px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="productData">
+
+        </tbody>
+    </table>
+   <script>
+
+        let products =[
+            {
+                CategoryName:"electronics",
+                ProductName:'laptop',
+                Price:200000,
+                Description:"lenovo"
+            }
+            ,
+             {
+                CategoryName:"electronics",
+                ProductName:'mobile',
+                Price:2000,
+                Description:"Mi"
+            },
+             {
+                CategoryName:"cloths",
+                ProductName:'dress',
+                Price:2000,
+                Description:"punjabi dress"
+            },
+             {
+                CategoryName:"cloths",
+                ProductName:'T-Shirt',
+                Price:300,
+                Description:"Cotton"
+            },
+             {
+                CategoryName:"home applience",
+                ProductName:'sofa',
+                Price:30000,
+                Description:"Leather"
+            },
+             {
+                CategoryName:"home applience",
+                ProductName:'Machine',
+                Price:200000,
+                Description:"Sony"
+            }
+         ];
+
+        console.log(products);
+        console.log('Find whoes Category is cloths');
+        
+        let findProduct = products.find((index,i)=>index.CategoryName==='cloths');
+        console.log(findProduct);
+        
+
+
+       
+        
+        
+    
+         function printTable(data){
+            let str="";
+
+            data.forEach((index,i,data)=>{
+                str+=`<tr>
+                        <td>${index.CategoryName}</td>
+                        <td>${index.ProductName}</td>
+                        <td>${index.Price}</td>
+                        <td>${index.Description}</td>
+                    </tr>`
+            
+            
+         });
+         document.getElementById("productData").innerHTML = str;
+         }
+
+         printTable(products);
+
+
+   </script> 
+
+
+</body>
+</html>

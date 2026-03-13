@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Filter Change</title>
+    <style>
+        body{
+            display: flex;
+            gap: 50px;
+            padding: 40px;
+            font-family: sans-serif;
+        }
+
+        .controls button{
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        img{
+            width: 300px;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button onclick="changeFilter('none')">None</button>
+        <button onclick="changeFilter('blur(5px)')">Blur</button>
+        <button onclick="changeFilter('brightness(200%)')">Brightness</button>
+        <button onclick="changeFilter('contrast(200%)')">Contrast</button>
+        <button onclick="changeFilter('grayscale(100%)')">Grayscale</button>
+        <button onclick="changeFilter('sepia(100%)')">Sepia</button>
+        <button onclick="changeFilter('invert(100%)')">Invert</button>
+    </div>
+
+    <div>
+        <img id="myImage" src="pineapple.jpg" alt="Image">
+    </div>
+
+    <script>
+        function changeFilter(filterValue){
+            document.getElementById("myImage").style.filter = filterValue;
+        }
+    </script>
+
+</body>
+</html>
+
