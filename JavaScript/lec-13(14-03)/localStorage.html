@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+<body>
+    <script>
+        //set in local storage 
+        localStorage.setItem('userName','Megha');
+        localStorage.setItem('surName','patel');
+
+        localStorage.setItem('address','101 surat');
+        localStorage.setItem('contact','123456789');
+
+        //get from local storage
+        let uName = localStorage.getItem('userName');
+        console.log(uName);
+
+        
+        //get key from index 
+        let index = localStorage.key(2);
+        console.log(index);
+        // console.log(localStorage.key(1));
+
+
+        //Find length of local storage
+
+        console.log(localStorage.length);
+
+        
+
+    </script>
+</body>
+</html>

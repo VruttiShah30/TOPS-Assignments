@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ['apple','banana','chicku'].map(item => item.length)
+            console.log(fruits);
+
+            //Comparision
+            function compareNumeric(a, b) {
+                if (a > b) return 1;
+                if (a == b) return 0;
+                if (a < b) return -1;
+                }
+
+                let arr = [ 1, 2, 15 ];
+
+                arr.sort(compareNumeric);
+
+                // alert(arr); 
+
+            //sort method : 
+            //Ascending Order : 
+            let numArray = [12,34,1,2,45,3,4,45,55];
+            console.log(numArray.sort(compareNumeric));
+
+            //reduce(); 
+            //Sum of all Numbers
+
+            let sum = numArray.reduce((total,i) =>{
+                return total + i ;
+
+            },0);
+            console.log(sum);
+
+            //Multiply Numbers
+
+            let multiply=numArray.reduce((num,i)=>{
+                return num * i;
+            },1);
+
+            console.log(multiply);
+
+            //count how many times a value appears.
+
+            let fruits1 = ["apple","banana","apple","orange","banana","apple"];
+
+            let count = fruits1.reduce((num,i)=>{
+                    num[i] = (num[i] || 0) +1;
+                    return num;
+
+            },{});
+            console.log(count);
+            //Flatten Nested Array 
+
+            let array1 = [[1,2],[3,4],[5,6]];
+            let result1 = array1.reduce((num,i)=>num.concat(i),[]);
+
+            console.log(result1);
+
+            //Find maximum Value
+
+            let max = numArray.reduce((num,i)=>{
+                return num > i ? num : i;
+
+            });
+            console.log(max);
+
+
+            //Total Price of Shopping Cart
+
+            let cart = [
+                {name : "Shirt", Price : 500},
+                {name : "Shoes", Price : 1500},
+                {name : "Cap", Price : 300}
+            ]
+
+            let total = cart.reduce((num,i)=>num + i.price,0);
+            console.log(total);
+
+
+            let hobbyStr = "sport-music-dance";
+
+                let hobbyArr = hobbyStr.split("-");
+                console.log(hobbyArr);
+
+                hobbyStr  = hobbyArr.join("-");
+                console.log(hobbyStr);
+
+
+    </script>
+</body>
+</html>
