@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable scope</title>
+</head>
+<body>
+    <script>
+        function outerFunction(x,y){
+
+                return function innerFunction(){
+                    let s = x+y;
+                    console.log("Addition is : ",s);
+                    
+                }
+    }
+
+    let innCall = outerFunction(50,100);
+    console.log(innCall);//return whole function defination: function outerFunction{}
+
+    innCall();
+
+    </script>
+    
+</body>
+</html>
