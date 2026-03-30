@@ -69,9 +69,7 @@ validateForm(){
             this.showMessage("Dates must be future","danger");
             return false;
         }
-
         return true;
-
     }
 
         saveToLocalStorage(){

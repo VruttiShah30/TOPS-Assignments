@@ -69,9 +69,7 @@ validateForm(){
             this.showMessage("Dates must be future","danger");
             return false;
         }
-
         return true;
-
     }
 
         saveToLocalStorage(){
@@ -89,22 +87,18 @@ validateForm(){
 
         };
 
-        let data = JSON.parse(localStorage.getItem("guests")) || [];
-
-        data.push(guest);
-
-        localStorage.setItem("guests",JSON.stringify(data));
-
+            let data = JSON.parse(localStorage.getItem("guests")) || [];
+            data.push(guest);
+            localStorage.setItem("guests",JSON.stringify(data));
         }
 
-        clearForm(){
-        this.form.reset();
+            clearForm(){
+            this.form.reset();
         }
 
         showMessage(msg,type){
 
         let message = document.getElementById("message");
-
         message.innerHTML = `
                 <div class="alert alert-${type}">
                 ${msg}
@@ -114,9 +108,7 @@ validateForm(){
         setTimeout(()=>{
             message.innerHTML=""
         },3000);
-
     }
-
 }
 
 new CustomerFormHandler();
