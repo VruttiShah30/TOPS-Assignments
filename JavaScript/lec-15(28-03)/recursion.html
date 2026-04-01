@@ -41,7 +41,23 @@
         let str = "Vrutti";
         console.log(Array.from(str)); // (6) ['V', 'r', 'u', 't', 't', 'i']
 
-        
+        //Find reverse number
+
+        rev=0;
+        function revNum(num){//1234
+            if(num==0){
+                return 1;
+            }
+            rem = num %10;
+            rev = rev * 10 + rem;
+            //console.log(rev);
+
+            num = parseInt(num/10);//123.4
+            revNum(num)
+            return rev
+
+            }
+        console.log(revNum(1234));
 
     </script>
 </body>
