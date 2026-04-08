@@ -7,9 +7,9 @@ class CustomerFormHandler {
         e.preventDefault();
 
         if(this.validateForm()){
-        this.saveToLocalStorage();
-        this.showMessage("Data Saved Successfully","success");
-        this.clearForm();
+            this.saveToLocalStorage();
+            this.showMessage("Data Saved Successfully","success");
+            this.clearForm();
         }
     });
 }

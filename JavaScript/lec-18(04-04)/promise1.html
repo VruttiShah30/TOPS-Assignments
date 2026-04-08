@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+</head>
+<body>
+    <script>
+        const Mypromise = new Promise((resolve,reject)=>
+    {
+        let num = prompt("Enter Num");
+        if(num > 0){
+            resolve("Number is perfect")
+        }
+        else{
+            reject('Invalid Number')        }
+    })
+
+    Mypromise.
+    then((msg)=>console.log(msg))
+    .catch((err)=>console.log(err))
+    </script>
+</body>
+</html>

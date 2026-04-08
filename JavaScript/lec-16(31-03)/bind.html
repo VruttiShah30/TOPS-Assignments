@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind method</title>
+</head>
+<body>
+    <script>
+        let user={
+            name : 'Vrutti',
+            sayhi : function(){
+                console.log(`Welcome : ${this.name}`);
+                
+            }
+        }
+
+
+        //setTimeout ( user.sayHi,2000); unefined name 
+
+
+        setTimeout(()=>{
+            user.sayhi()
+        },2000)
+
+
+        //bind method : used to create a new function with a fixed this value and (optionally) preset arguments.
+        let product = {
+            pname : 'sugar',
+            price : 50
+        }
+
+        function printProduct(){
+            let str = ` ProductName = ${this.pname} and Price = ${this.price}`
+            console.log(str);
+
+        }
+
+        let bindFunction = printProduct.bind(product);
+        setTimeout(bindFunction,2000);
+        
+        </script>
+</body>
+</html>

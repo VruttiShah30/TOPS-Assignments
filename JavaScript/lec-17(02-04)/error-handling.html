@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function testFunction(){
+            try {
+                let m = 100;
+                // let m ;
+                // if(!m){
+                // throw new error("accessing undefined variable m ")}
+                // }
+                console.log(m);
+            } catch (error) {
+                console.log (error.message);
+
+            }
+            finally {
+                console.log("All Done");
+            }
+        }
+        testFunction();
+        console.log("after error js working");
+    </script>
+</body>
+</html>
