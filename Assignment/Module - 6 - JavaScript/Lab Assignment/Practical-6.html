@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions Example</title>
+</head>
+<body>
+
+<h1>Check Console for Output</h1>
+
+<script>
+    // -------- Task 1: greetUser Function --------
+    function greetUser(name) {
+        console.log("Hello, " + name + "!");
+    }
+
+    // Call the function
+    let userName = prompt("Enter your name:");
+    greetUser(userName);
+
+
+    // -------- Task 2: calculateSum Function --------
+    function calculateSum(a, b) {
+        return a + b;
+    }
+
+    // Call the function
+    let num1 = Number(prompt("Enter first number:"));
+    let num2 = Number(prompt("Enter second number:"));
+
+    let result = calculateSum(num1, num2);
+
+    console.log("Sum is:", result);
+
+</script>
+
+</body>
+</html>
