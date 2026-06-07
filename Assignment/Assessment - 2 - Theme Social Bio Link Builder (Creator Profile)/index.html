@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bio Stack Builder</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!------------------------------ Header ------------------------------------->
+    <div class="header">
+        <h1>Creator Bio Stack</h1>
+        <p>Manage your social profile links</p>
+
+        <button id="themeToggle" class="theme-btn">Dark Mode</button>
+    </div>
+
+    <!------------------------------ Form Section ------------------------------------->
+    <div class="form-card">
+      <h2>Add Social Link</h2>
+
+      <form id="linkForm">
+          <div class="input-group">
+              <label>Link Title</label>
+              <input type="text" id="title" placeholder="Instagram" required/>
+          </div>
+
+          <div class="input-group">
+            <label>URL</label>
+            <input type="text" id="url" placeholder="https://instagram.com" required/>
+          </div>
+
+          <!------------------------------ Error Message ------------------------------------->
+          <p id="errorMessage" class="error-message"></p>
+
+          <button type="submit" class="add-btn">Add Link</button>
+      </form>
+    </div>
+
+    <!------------------------------ Preview Section ------------------------------------->
+    <div class="preview-card">
+      <h2>Profile Preview</h2>
+
+      <div id="linksContainer" class="links-container">
+        <!-- Dynamic Links Render Here -->
+      </div>
+    </div>
+
+  </div>
+
+  <!------------------------------ JavaScript ------------------------------------->
+  <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
