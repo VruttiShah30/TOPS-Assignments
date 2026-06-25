@@ -82,30 +82,19 @@
 
         let quizFlag = localStorage.getItem('quiz');
 
-        if(quizFlag){
+        if (quizFlag){
             quizFlag = JSON.parse(quizFlag);
             quizFlag.push(questionObject);
-            localStorage.setItem('quiz',JSON.stringify(quizFlag));
+            localStorage.setItem('quiz',JSON.stringfy(quizFlag));
         }
-        else{
-            console.log(questionObj);
+        else {
+            console.log(questionObject);
+            let quiz = [] ;
+            quiz.push(questionObject);
 
-                    let quiz=[];
-                    quiz.push(questionObj);
-
-                    localStorage.setItem('quiz',JSON.stringify(quiz))
-            
-
-
+            localStorage.setItem('quiz',JSON.stringify(quiz));
         }
-
-
-
-
     })
-
-
-
 </script>
 
 </body>

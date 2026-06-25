@@ -1,5 +1,5 @@
 class CustomerFormHandler {
-
+ 
         constructor(){
         this.form = document.getElementById("guestForm");
 

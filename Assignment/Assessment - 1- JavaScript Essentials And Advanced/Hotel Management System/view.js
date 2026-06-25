@@ -1,5 +1,5 @@
 class SubmissionViewer{
-
+ 
 constructor(){
     this.tableBody = document.getElementById("tableBody");
     this.search = document.getElementById("search");
