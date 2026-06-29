@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+
+            <div class="card shadow-sm p-4">
+                
+                <!-- Question Text -->
+               
+
+             
+              <form method="post" id="frm">
+                 <h5 class="fw-bold mb-3" id="question">1. What is the capital of India?</h5>
+                  <div id="checkboxid">
+
+                </div>
+                <input type="hidden" name="" id="answer">
+                <input type="submit" value="Submit" id="ansSubmit">
+              </form>
+            <div id="res"></div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let i = 0;
+        let result = [] ;
+        document.getElementById('frm').style.display="none";
+
+        str="<h1>Your Score</h1>";
+        let count = 0;
+
+        result.map((index,i)=>{
+            if(index.flag==true){
+                count++;
+            }
+            str+='<h3>You Got ${count} out of ${result.length} questions correct!</h3>'
+
+            document.getElementByID('res').iinerHtml = str;
+        })
+
+    </script>
+</body>
+</html>
