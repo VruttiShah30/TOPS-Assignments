@@ -2,7 +2,7 @@
 export const UserGreetings = ({ username }) =>{
     return (
         <h2>
-            Hello , { username} !
+            Hello , { username } !
         </h2>
     )
 }
