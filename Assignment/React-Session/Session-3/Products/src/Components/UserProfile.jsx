@@ -1,4 +1,5 @@
-function UserProfile({ username, followers, profilePic }) {
+export const UserProfile = ({ username, followers, profilePic }) =>
+  {
   return (
     <div
       style={{
@@ -31,5 +32,3 @@ UserProfile.defaultProps = {
   followers: 0,
   profilePic: "https://via.placeholder.com/100",
 };
-
-export default UserProfile;
