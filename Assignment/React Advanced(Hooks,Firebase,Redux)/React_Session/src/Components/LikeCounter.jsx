@@ -4,17 +4,19 @@ function LikeCounter() {
   const [likes, setLikes] = useState(0);
 
   const handleLike = () => {
-    setLikes(likes + 1);
+    setLikes((previousLikes) => previousLikes + 1);
   };
 
   return (
-    <div>
-      <h2>Instagram Post</h2>
+    <div className="card">
+      <h2> Like Counter</h2>
 
-      <p>{likes} Likes</p>
+      <p className="like-count">
+        {likes} {likes === 1 ? "Like" : "Likes"}
+      </p>
 
       <button onClick={handleLike}>
-        Like
+         Like
       </button>
     </div>
   );

@@ -1,8 +1,10 @@
 function PlaylistCard({ songName, artist }) {
   return (
-    <div className="playlist-card">
-      <h3>🎵 {songName}</h3>
-      <p>Artist: {artist}</p>
+    <div className="card">
+      <h3> {songName}</h3>
+      <p>
+        <strong>Artist:</strong> {artist}
+      </p>
     </div>
   );
 }
